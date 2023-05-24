@@ -12,7 +12,7 @@ export const Header = () => {
 
     const [menuLateral, setMenuLateral] = React.useState(false);
 
-    const toggleDrawer = () => (event: React.KeyboardEvent | React.MouseEvent) => {
+    const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
         if (
             event.type === 'keydown' &&
             ((event as React.KeyboardEvent).key === 'Tab' ||
