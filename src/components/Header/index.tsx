@@ -28,7 +28,7 @@ export const Header = () => {
             <AppBar position="static" sx={{mb: 5}}>
                 <Toolbar>
                     <IconButton
-                        onClick={toggleDrawer}
+                        onClick={toggleDrawer(true)}
                         size="large"
                         edge="start"
                         color="inherit"
