@@ -27,7 +27,7 @@ type Props = {
 }
 
 
-export const MenuLateral = ({click, state, ...props}: Props) => {
+export const MenuLateral = ({click, state}: Props) => {
 
     const [collapseAlunos, setCollapseAlunos] = React.useState(false);
     const [collapseTurmas, setCollapseTurmas] = React.useState(false);
@@ -151,7 +151,7 @@ export const MenuLateral = ({click, state, ...props}: Props) => {
                     <Collapse in={collapseCursos} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding
                               onClick={click(false)}
-                              onKeyDown={click(false)} >
+                              onKeyDown={click(false)}>
 
                             <Link to="/cursos/adicionar" className="item-menu">
                                 <ListItemButton sx={{pl: 4}}>

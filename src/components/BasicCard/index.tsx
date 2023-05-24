@@ -44,8 +44,8 @@ export default function PlanCard({title, subtitle, price, link,fontSizeValue = 4
                 </Grid>
             </CardContent>
             <CardActions>
-                <Link href={link} underline="none" fullWidth={true}>
-                    <Button size="large" variant="contained" color="inherit" fullWidth={true}>Assinar</Button>
+                <Link href={link} underline="none">
+                    <Button size="large" variant="contained" color="inherit">Assinar</Button>
                 </Link>
             </CardActions>
         </Card>

@@ -9,7 +9,7 @@ type Props = {
 }
 
 
-export const ButtonMenu = ({size = 'small',click, ...props}: Props) => {
+export const ButtonMenu = ({size = 'small',click}: Props) => {
     return (
         <IconButton
             onClick={click( true)}

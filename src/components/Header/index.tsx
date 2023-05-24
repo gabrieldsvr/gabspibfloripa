@@ -12,7 +12,7 @@ export const Header = () => {
 
     const [menuLateral, setMenuLateral] = React.useState(false);
 
-    const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+    const toggleDrawer = () => (event: React.KeyboardEvent | React.MouseEvent) => {
         if (
             event.type === 'keydown' &&
             ((event as React.KeyboardEvent).key === 'Tab' ||
@@ -28,7 +28,7 @@ export const Header = () => {
             <AppBar position="static" sx={{mb: 5}}>
                 <Toolbar>
                     <IconButton
-                        onClick={toggleDrawer(true)}
+                        onClick={toggleDrawer}
                         size="large"
                         edge="start"
                         color="inherit"
